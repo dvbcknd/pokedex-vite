@@ -8,11 +8,10 @@ desenvolvida como uma SPA (Single Page Application) utilizando JavaScript puro e
 
 ## Funcionalidades
 
-- Listagem de Pokémon consumindo API REST - (em construção)
+- Listagem de Pokémon consumindo API REST
 - Busca por nome ou ID - (em construção)
-- Renderização dinâmica no DOM - (em construção)
-- Navegação sem recarregamento de página (SPA) - (em construção)
-- Tratamento de loading e erros - (em construção)
+- Renderização dinâmica no DOM
+- Navegação sem recarregamento de página (SPA)
 
 #
 
