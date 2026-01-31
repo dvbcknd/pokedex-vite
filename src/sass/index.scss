@@ -1,0 +1,125 @@
+
+@use 'padrao' as *;
+@use 'mediaquerie' as *;
+
+// Estilização do card do Pokemon
+.main-container{
+    max-width: 100%;
+    max-height: 900px;
+    background-color: #eeecec;
+    grid-area: main;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "title"
+        "container-pokemons-ol"
+        "btns";
+    
+
+        .title{
+            margin: 0;
+        }
+   
+        .container-pokemons-ol{ //ol lista com todos os pokemons
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .7rem;
+        padding: 20px;
+        margin: 0;
+        background-color: #ffffff;
+        border-radius: 10px;
+        grid-area: container-pokemons-ol;
+
+    
+
+
+        .container-pokemon-li{ // li, itens da lista de "pokemons"
+            display: flex;
+            max-width: 100%;
+            max-height: 100%;
+            flex-direction: column;
+            margin: .5rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: #d8d52e;
+            color: #fff; 
+            overflow:hidden;
+
+            .number-pokemon{ //numero do pokemon
+                color: #ffffff;
+                opacity: 0.8;
+                text-align: right;
+                font-size: 1.5rem;
+            }
+
+            .name-pokemon{ // nome do pokemon
+                color: #fff;
+                margin: .30rem;
+                font-size: 2rem;
+                
+            }
+            
+            .datails{ // Detalhes do pokemon (lista de tipos de poderes e imagem)
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                
+                .types{ //Lista com os tipos de poderes do pokemon
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;  
+                    
+                    .type{ // tipos de poderes do pokemon
+                        background-color: #3a4946;
+                        color: #fff;
+                        padding: .5rem 1rem;
+                        margin: .30rem 0;
+                        font-size:  .650rem;
+                        border-radius: 1rem;
+                        color: #ffffff;
+                        font-size: 1rem;
+
+                    }
+
+                }
+
+                .image{ //foto do pokemon
+                    max-width: 100%; 
+                    height: 9rem;
+                    align-self: flex-end;
+                    
+
+                }
+            }
+        } 
+}
+
+    .btns-navegation{
+        grid-area: btns;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .btn-next, .btn-previous{
+            width: 100px;
+            padding: .4rem;
+            margin: .5rem;
+            border-radius: 11px;
+        }
+    }
+}
+
+.footer{
+    background-color: #88cdcf;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    grid-area: footer;
+
+}
